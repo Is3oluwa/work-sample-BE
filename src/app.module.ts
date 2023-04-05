@@ -38,7 +38,7 @@ import { OrderModule } from './order/order.module';
       password: '1111',
       database: 'postgres',
       entities: [User, Product, Order, Cart],
-      synchronize: true, // never use TRUE in production!
+      synchronize: false, // never use TRUE in production!
   }),
     UserModule,
     ProductsModule,
