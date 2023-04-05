@@ -35,7 +35,7 @@ import { OrderModule } from './order/order.module';
           database: configService.get('POSTGRES_DB'),
           password: configService.get('POSTGRES_PASSWORD'),
           entities: [User, Product, Order, Cart],
-          synchronize: false,
+          synchronize: true,
         };
       },
     }),
