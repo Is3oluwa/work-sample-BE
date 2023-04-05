@@ -1,0 +1,30 @@
+<!-- OrderConformation.hbs -->
+<h1>Order Details</h1>
+<p>Thank you for your order!</p>
+<table>
+  <thead>
+    <tr>
+      <th>Product Name</th>
+      <th></th>
+      <th>Quantity</th>
+      <th></th>
+      <th>Price</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each products}}
+    <tr>
+      <td>{{ this.name }}</td>
+      <td></td>
+      <td>{{ this.quantity }}</td>
+      <td></td>
+      <td>{{ this.price }}</td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>
+
+<!-- confirmation.hbs -->
+<h1>Order Confirmation</h1>
+<p>Thank you for your order!</p>
+<p>Total Price: {{ totalPrice }}</p>
