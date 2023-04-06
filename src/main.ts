@@ -1,12 +1,16 @@
 import { ValidationPipe } from '@nestjs/common';
 import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app.module';
+import { METHODS } from 'http';
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule, { cors: true });
   app.enableCors({
-    origin: "*"
-  })
+    origin:
+      'https://642dda3a4ae7d42755fe75d3--work-sample-ecommerce.netlify.app',
+    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+    allowedHeaders: 'Content-Type,Authorization',
+  });
   app.useGlobalPipes(
     new ValidationPipe({
       whitelist: true,
@@ -14,7 +18,7 @@ async function bootstrap() {
       transformOptions: {
         enableImplicitConversion: true,
       },
-    })
+    }),
   );
   await app.listen(3000);
 }
