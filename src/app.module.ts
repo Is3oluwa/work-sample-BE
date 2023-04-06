@@ -30,7 +30,7 @@ import { OrderModule } from './order/order.module';
           type: 'postgres',
           url: configService.get("POSTGRES_URL"),
           host: configService.get(`POSTGRES_HOST`),
-          port: configService.get(`PORT`),
+          port: configService.get(`DB_PORT`),
           username: configService.get('POSTGRES_USER'),
           database: configService.get('POSTGRES_DB'),
           password: configService.get('POSTGRES_PASSWORD'),
