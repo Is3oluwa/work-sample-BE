@@ -2,6 +2,7 @@ import { ValidationPipe } from '@nestjs/common';
 import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app.module';
 import { METHODS } from 'http';
+import { productSeeder } from './seeds/products.seed';
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule, { cors: true });
@@ -21,5 +22,6 @@ async function bootstrap() {
     }),
   );
   await app.listen(3000);
+  await productSeeder();
 }
 bootstrap();
