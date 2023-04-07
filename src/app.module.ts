@@ -13,6 +13,7 @@ import { Cart } from './models/cart.entity';
 import { CartModule } from './cart/cart.module';
 import { MailModule } from './mail/mail.module';
 import { OrderModule } from './order/order.module';
+import { ProductSeedModule } from './seeds/products/products.seed.module';
 
 @Module({
   imports: [
@@ -44,6 +45,7 @@ import { OrderModule } from './order/order.module';
     CartModule,
     MailModule,
     OrderModule,
+    ProductSeedModule,
   ],
   controllers: [AppController],
   providers: [AppService],
