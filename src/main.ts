@@ -7,7 +7,7 @@ async function bootstrap() {
   const app = await NestFactory.create(AppModule, { cors: true });
   app.enableCors({
     origin:
-      'https://642dda3a4ae7d42755fe75d3--work-sample-ecommerce.netlify.app',
+      'https://work-sample-ecommerce.netlify.app',
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
     allowedHeaders: 'Content-Type,Authorization',
   });
