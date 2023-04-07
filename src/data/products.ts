@@ -1,6 +1,5 @@
 export const Products = [
   {
-    id: 1,
     name: 'TV',
     description: 'Best tv in the market',
     image:
@@ -9,7 +8,6 @@ export const Products = [
     quantity: 0,
   },
   {
-    id: 2,
     name: 'iPhone',
     description: 'Best iPhone in the market',
     image:
@@ -18,7 +16,6 @@ export const Products = [
     quantity: 0,
   },
   {
-    id: 3,
     name: 'Chromecast',
     description: 'Best Chromecast in the market',
     image:
@@ -27,7 +24,6 @@ export const Products = [
     quantity: 0,
   },
   {
-    id: 4,
     name: 'Glasses',
     description: 'Best glasses in the market',
     image:
@@ -36,7 +32,6 @@ export const Products = [
     quantity: 0,
   },
   {
-    id: 1,
     name: 'TV',
     description: 'Best tv in the market',
     image:
@@ -45,7 +40,6 @@ export const Products = [
     quantity: 0,
   },
   {
-    id: 2,
     name: 'iPhone',
     description: 'Best iPhone in the market',
     image:
@@ -54,7 +48,6 @@ export const Products = [
     quantity: 0,
   },
   {
-    id: 3,
     name: 'Chromecast',
     description: 'Best Chromecast in the market',
     image:
@@ -63,7 +56,6 @@ export const Products = [
     quantity: 0,
   },
   {
-    id: 4,
     name: 'Glasses',
     description: 'Best glasses in the market',
     image:

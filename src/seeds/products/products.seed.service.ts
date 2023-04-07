@@ -11,13 +11,12 @@ export class ProductSeederService {
   ) {}
 
   async seed() {
-    const exists = await this.repo.find();
+    const exists = await this.repo.findOne({ where: {}, order: { id: 'DESC' } });
 
     if (exists) return;
 
     for (const product of Products) {
       const newProduct = this.repo.create({
-        id: product.id,
         image: product.image,
         description: product.description,
         name: product.name,
@@ -26,6 +25,8 @@ export class ProductSeederService {
       });
 
       await this.repo.save(newProduct);
+
     }
+    console.log('Seeder finished successfully')
   }
 }
